@@ -1,0 +1,154 @@
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding-top: 153px;
+  background-color: $color-white;
+}
+
+.section {
+  display: flex;
+  height: calc(100vh - 153px);
+  width: 100%;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 96px;
+  width: 30%;
+}
+
+.header-wrapper {
+  max-width: 272px;
+  width: 272px;
+}
+
+.section-info {
+  width: 70%;
+  padding-left: 64px;
+  padding-right: 32px;
+  padding-top: 96px;
+}
+.info-wrapper {
+  max-width: 768px;
+}
+
+.carousel-wrapper {
+  position: absolute;
+  height: calc(100vh - 153px);
+  z-index: 0;
+  .carousel,
+  .carousel-inner {
+    height: 100%;
+  }
+}
+
+.section-hello {
+  // background-image: url("/images/background/hello_cat.jpg");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  p {
+    width: 272px;
+    padding: 48px 0;
+  }
+  .section-header {
+    padding-top: 144px;
+    background-color: $color-lightGray-opacity50;
+  }
+}
+
+.section-services .section-header {
+  background-color: $color-lightGray-opacity50;
+}
+
+.section-services .info-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding-bottom: 96px;
+  gap: 32px;
+
+  .service-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    img {
+      width: 16px;
+    }
+  }
+  .service-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 330px;
+  }
+}
+
+.section-about {
+  background-image: url("/images/background/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-blue;
+
+  p {
+    color: $color-white;
+    padding-bottom: 24px;
+  }
+
+  h2 {
+    color: $color-white;
+  }
+}
+
+.section-keepInTouch .section-info {
+  background-color: $color-lightGray-opacity50;
+  .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+  }
+}
+
+.keepInTouch-text {
+  display: flex;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.divider {
+  width: 2px;
+  height: inherit;
+  background-color: $color-lightGray;
+}
+
+.address,
+.openingHours {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  // justify-content: space-between;
+}
+
+.address {
+  padding-right: 96px;
+}
+.openingHours {
+  padding-left: 96px;
+}
+.time,
+.email,
+.phone {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#map {
+  height: 100%;
+}
