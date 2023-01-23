@@ -77,8 +77,8 @@
       </div>
     </div>
 
-    <div class="section-wrapper">
-      <div class="section section-hello">
+    <div class="section-wrapper" id="page-top">
+      <div class="section section-hello" >
         <div class="section-header">
           <div class="header-wrapper">
             <h2 class="section-name">
@@ -125,10 +125,6 @@
               />
             </div>
           </div>
-
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
       </div>
 
@@ -296,10 +292,42 @@
               </div>
             </div>
 
-            <div id="map" class="keepInTouch-map"></div>
+            <div class="map-wrapper">
+              <div id="mapdiv" class="keepInTouch-map"></div>
+            </div>
 
             <div class="keepInTouch-contactForm">
               <h6><span>contact</span> us</h6>
+
+              <form>
+                <div class="inputs">
+                  <div class="input-fields">
+                    <input
+                      type="text"
+                      id="fname"
+                      name="fname"
+                      placeholder="Name"
+                    />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                    />
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div class="input-message">
+                    <textarea name="message" placeholder="Message"></textarea>
+                  </div>
+                </div>
+
+                <button class="btn" type="submit">Submit</button>
+              </form>
             </div>
           </div>
         </div>
@@ -307,10 +335,12 @@
     </div>
 
     <div class="footer">
-      <button class="goToTop">
-        <img src="/images/icons/up_ico.svg" alt="go to top icon" />
+      <a class="goToTop btn" href="#page-top">
+
+          <img src="/images/icons/up_ico.svg" alt="go to top icon" />
+
         <p>top</p>
-      </button>
+      </a>
       <div class="credits">
         <p>© 2023 by Max.</p>
         <div class="social">
@@ -320,11 +350,10 @@
       </div>
     </div>
 
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
     <script src="js/script.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script>
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

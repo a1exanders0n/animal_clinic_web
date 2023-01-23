@@ -19,6 +19,7 @@ button {
 html,
 body {
   width: 100%;
+  height: 100%;
 }
 
 button {
@@ -259,13 +260,19 @@ h6 span {
   color: #ffffff;
 }
 
+.section-keepInTouch {
+  height: 100%;
+}
 .section-keepInTouch .section-info {
   background-color: rgba(221, 221, 221, 0.5019607843);
 }
 .section-keepInTouch .section-info .info-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  padding-bottom: 32px;
+}
+.section-keepInTouch .section-info .info-wrapper .map-wrapper {
+  padding: 64px 0;
 }
 
 .keepInTouch-text {
@@ -303,8 +310,68 @@ h6 span {
   text-transform: uppercase;
 }
 
-#map {
+.keepInTouch-map {
+  width: 100%;
+}
+
+#mapdiv {
+  height: 256px;
+}
+
+#OpenLayers_Control_Attribution_7 {
+  bottom: 8px;
+}
+
+.olPopup {
+  height: 128px !important;
+  top: 100px !important;
+}
+
+.olPopupContent h2 {
+  font-size: 24px;
+}
+.olPopupContent p {
+  font-size: 16px;
+}
+
+.keepInTouch-contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.keepInTouch-contactForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.inputs {
+  display: flex;
+  width: 100%;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 8px;
+  padding-right: 8px;
+}
+.input-fields input {
+  height: 32px;
+  padding: 0 8px;
+}
+
+.input-message {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.input-message textarea {
+  resize: none;
   height: 100%;
+  padding: 4px 8px;
 }
 
 .footer {
@@ -319,6 +386,13 @@ h6 span {
   width: 100%;
   background-color: #28add1;
   color: #ffffff;
+  border: none;
+  border-radius: 0px;
+  text-decoration: none;
+}
+.goToTop:hover {
+  color: #ffffff;
+  background-color: #f56a56;
 }
 .goToTop img {
   width: 32px;
@@ -334,6 +408,9 @@ h6 span {
   justify-content: space-between;
   height: 40px;
   padding: 8px 200px;
+}
+.credits p {
+  margin-bottom: 0;
 }
 .credits img {
   height: 24px;

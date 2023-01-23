@@ -106,12 +106,18 @@
   }
 }
 
-.section-keepInTouch .section-info {
-  background-color: $color-lightGray-opacity50;
-  .info-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 96px;
+.section-keepInTouch {
+  height: 100%;
+  .section-info {
+    background-color: $color-lightGray-opacity50;
+    .info-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 32px;
+      .map-wrapper {
+        padding: 64px 0;
+      }
+    }
   }
 }
 
@@ -133,7 +139,6 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  // justify-content: space-between;
 }
 
 .address {
@@ -149,6 +154,65 @@
   text-transform: uppercase;
 }
 
-#map {
-  height: 100%;
+.keepInTouch-map {
+  width: 100%;
+}
+
+#mapdiv {
+  height: 256px;
+}
+#OpenLayers_Control_Attribution_7 {
+  bottom: 8px;
+}
+.olPopup {
+  height: 128px !important;
+  top: 100px !important;
+}
+.olPopupContent {
+  h2 {
+    font-size: $font-24;
+  }
+  p {
+    font-size: $font-16;
+  }
+}
+
+.keepInTouch-contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+}
+
+.inputs {
+  display: flex;
+  width: 100%;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 8px;
+  padding-right: 8px;
+  input {
+    height: 32px;
+    padding: 0 8px;
+  }
+}
+
+.input-message {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  textarea {
+    resize: none;
+    height: 100%;
+    padding: 4px 8px;
+  }
 }
